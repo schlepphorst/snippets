@@ -15,6 +15,15 @@ chrome.extension.onMessage.addListener(function (
       setTimeout(() => {
         respondedToRequest = false;
       }, 1000); // reset responder
+    } else if (request.method == 'saveFromClipper') {
+      console.log(
+        'Received message from clipper: ',
+        request.title,
+        request.text
+      );
+      SnippetController.saveSnippet(
+        new Snippet(request.url, request.title, request.text)
+      );
     } else {
       if (!respondedToRequest) {
         // Maybe we should respond
