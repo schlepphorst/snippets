@@ -15,7 +15,7 @@ class SnippetController {
       });
     });
   };
-
+  
   static saveSnippet = async (newSnippet) => {
     const oldSnippets = await this.getSnippets();
     // console.log('Loaded snippets to save: ', oldSnippets);
