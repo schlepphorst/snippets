@@ -3,7 +3,7 @@
   "name": "Snippet",
   "version": "1.0",
   "description": "Collect reference Snippets.",
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "scripting", "tabs"],
   "icons": {
     "16": "icon/icon.png",
     "32": "icon/icon.png",
@@ -20,15 +20,22 @@
     }
   },
   "commands": {
-    "_execute_action": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      }
+    },
+    "save-page": {
       "suggested_key": {
         "default": "Ctrl+Shift+S",
         "mac": "Command+Shift+S" // Slash?
-      }
+      },
+      "description": "Save the current selection or page"
     }
   },
   "background": {
-    "service_worker": "service-worker.js",
+    "service_worker": "background.js",
     "type": "module"
   },
 

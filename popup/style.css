@@ -1,1 +1,87 @@
+* {
+    font-family: arial;
+}
 
+body {
+    width: 400px;
+    height: 510px;
+    /* border: 1px dashed red; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;    
+    border: 1px solid black;
+    height: 12%;
+}
+
+nav .header {
+    margin-left: 80px;
+}
+
+nav .buttons {
+    margin-right: 30px;
+}
+
+.snippets {
+    display: flex;
+    height: 87%;
+    flex-direction: column;
+    /* border: 1px dashed green; */
+    margin: 0;
+}
+
+.snippets1,
+.snippets3 {
+    background-color: rgba(239, 239, 240, .8);
+    border: 1px solid black;
+    height: 110px;
+    margin-top: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.snippets2,
+.snippets4 {
+    border: 1px solid black;
+    height: 25%;
+    height: 110px;
+    margin-top: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.snippets1:hover,
+.snippets2:hover,
+.snippets3:hover,
+.snippets4:hover {  
+  background-color: rgba(239, 239, 240, 1.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.snippets1 p,
+.snippets2 p,
+.snippets3 p,
+.snippets4 p {
+    color: black;
+    font-size: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.snippets1 h4,
+.snippets2 h4,
+.snippets3 h4,
+.snippets4 h4 {
+  color: black;
+  font-size: 10px;
+  margin: 0;
+}
+
+#expand {
+    height: 11px;
+    width: 11px;
+}

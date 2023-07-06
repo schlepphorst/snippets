@@ -1,0 +1,19 @@
+Functionality:
+- Input
+  - Button alone doesn't do anything, just previews list
+  - Shortcut Key or Copy button saves current selection or page
+- Output
+  - Click a preview link to open it
+
+
+To-do:
+- Get text selection from page to save selection + Snippet
+- Snippet preview can be just Title, preview -- box is a link
+    - done. i think preview can be longer than 100 chars.
+    - 
+
+Later:
+- click the expand button to make a page (??)
+- Make full page of notes + links
+  - A bunch of divs with a linked titled + full text in a new web page
+  - Somehow it makes a webpage (??)
