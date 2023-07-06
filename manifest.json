@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Snippet",
+  "version": "1.0",
+  "description": "Collect reference Snippets.",
+  "permissions": ["storage", "activeTab"],
+  "icons": {
+    "16": "icon/icon.png",
+    "32": "icon/icon.png",
+    "48": "icon/icon.png",
+    "128": "icon/icon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "icon/icon.png",
+      "32": "icon/icon.png",
+      "48": "icon/icon.png",
+      "128": "icon/icon.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S" // Slash?
+      }
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+
+  "css": ["index.css"]
+}
