@@ -94,9 +94,12 @@ nav .buttons {
 .snippets4 h4 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 18px;
+  max-height: 20px;
   margin: 6px;
   margin-left: 6px;
   margin-right: 6px;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 #expand {

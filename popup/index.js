@@ -60,15 +60,15 @@ async function saveSnippet() {
       { method: 'getSelection' },
       (response) => {
         setTimeout(() => {
-          console.log(response.data);
+          const selectedText = response ? response.data : '';
           console.log(
             'Saving new entry from Page: ',
             tab[0].title,
             'with text',
-            response.data
+            selectedText
           );
           SnippetController.saveSnippet(
-            new Snippet(tab[0].url, tab[0].title, response.data)
+            new Snippet(tab[0].url, tab[0].title, selectedText)
           );
         }, 100);
       }
